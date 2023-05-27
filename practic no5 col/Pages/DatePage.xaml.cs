@@ -1,5 +1,6 @@
 ﻿using practic_no5_col.Models;
 using practic_no5_col.UserControls;
+using practic_no5_col.View_Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,7 +46,7 @@ namespace practic_no5_col.Pages
                     exerciseList[i].Selected = true;   
                 }
 
-                ExerciseStackPanel.Children.Add(new ExerciseUserControl(exerciseList[i]));
+                ExerciseStackPanel.Children.Add(new ExerciseUsserControl2(exerciseList[i]));
             }
         }
 

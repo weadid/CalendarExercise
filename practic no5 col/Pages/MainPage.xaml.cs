@@ -1,4 +1,5 @@
 ﻿using practic_no5_col.UserControls;
+using practic_no5_col.View_Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,7 +70,7 @@ namespace practic_no5_col.Pages
             {
                 DateTime date = new DateTime(currentdate.Year, currentdate.Month, i);
                 DateExercises dateExercises = DateExercises.DateExercisesList.Where(d => d.Date == date).FirstOrDefault();
-                DayWrapPanel.Children.Add(new DateUserConrol(date, dateExercises));
+                DayWrapPanel.Children.Add(new DateUserControl2(date, dateExercises));
             }
         }
 

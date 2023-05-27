@@ -75,7 +75,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\MainWindow.xaml">
+    <Page Include="View Model\DateUserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View Model\ExerciseUsserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -99,7 +107,13 @@
     <Compile Include="UserControls\ExerciseUserControl.xaml.cs">
       <DependentUpon>ExerciseUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\MainWindow.xaml.cs">
+    <Compile Include="View Model\DateUserControl2.xaml.cs">
+      <DependentUpon>DateUserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View Model\ExerciseUsserControl2.xaml.cs">
+      <DependentUpon>ExerciseUsserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -161,6 +175,8 @@
   <ItemGroup>
     <Resource Include="Resoucres\Calendar.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Windows\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

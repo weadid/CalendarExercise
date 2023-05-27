@@ -22,24 +22,11 @@ namespace practic_no5_col.UserControls
     /// </summary>
     public partial class DateUserConrol : UserControl
     {
-        DateExercises dateExercises;
-        DateTime date;
-        public DateUserConrol(DateTime date, DateExercises dateExercises = null)
+       
+        public DateUserConrol()
         {
             InitializeComponent();
-            this.dateExercises = dateExercises;
-            this.date = date;
-            DayLabel.Content = date.Day;
-            if (dateExercises != null)
-            {
-                DayImage.Source = dateExercises.Exercises[0].ImageSource;
-            }
-        }
-
-        private void UserControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-
-            PageNavigation.MainFrame.Navigate(new DatePage(date, dateExercises));
+            
         }
     }
 }

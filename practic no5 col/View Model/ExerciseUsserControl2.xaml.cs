@@ -13,16 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace practic_no5_col.UserControls
+namespace practic_no5_col.View_Model
 {
     /// <summary>
-    /// Логика взаимодействия для ExerciseUserControl.xaml
+    /// Логика взаимодействия для ExerciseUsserControl2.xaml
     /// </summary>
-    public partial class ExerciseUserControl : UserControl
+    public partial class ExerciseUsserControl2 : UserControl
     {
-        public ExerciseUserControl()
+        public ExerciseUsserControl2(Exercise exercise)
         {
             InitializeComponent();
+            DataContext = exercise;
         }
     }
 }
